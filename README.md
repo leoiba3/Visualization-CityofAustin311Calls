@@ -41,12 +41,17 @@ The dataset is expected to be a CSV file containing service requests with variou
 ### Data Exploration and Visualization:
 
 - Plot the number of service requests per month to identify trends over time.
+![image](https://github.com/leoiba3/Visualization-CityofAustin311Calls/assets/116103745/7b63a61c-7a02-4853-882a-546d59a8c011)
 - Analyze the distribution of service requests across different predicted categories.
+![image](https://github.com/leoiba3/Visualization-CityofAustin311Calls/assets/116103745/0eb78a40-99fd-44ac-83a0-13b3d61e4784)
+
 
 ### Spatial Analysis:
 
 - Filter data for a specific category (e.g., Public Safety).
 - Create a heatmap visualization of service requests for the category to identify hotspots.
+  ![image](https://github.com/leoiba3/Visualization-CityofAustin311Calls/assets/116103745/df5bef49-2e9c-47df-b5da-8311026974e6)
+  
 
 ## Code Snippets
 
@@ -73,6 +78,5 @@ from folium.plugins import HeatMap
 map = folium.Map(location=[latitude, longitude], zoom_start=13)
 HeatMap(data=[[lat, lon] for lat, lon in zip(latitudes, longitudes)]).add_to(map)
 ```
-## Results:
 
 
